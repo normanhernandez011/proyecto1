@@ -1,0 +1,24 @@
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csproj.CoreCompileInputs.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTIModelo\obj\Debug\InventarioTIModelo.pdb
