@@ -1,0 +1,110 @@
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csprojAssemblyReference.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CoreCompileInputs.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\Inventario2.Logicas.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\Inventario2.Logicas.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll.config
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.dll.config
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.xml
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CopyComplete
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\Inventario2.Logicas.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\Inventario2.Logicas.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll.config
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI2.Data.dll.config
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CopyComplete
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll.config
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CopyComplete
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Helpers.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Mvc.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Razor.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.dll.config
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Helpers.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Mvc.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Razor.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Helpers.resources.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Razor.resources.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.resources.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Logica.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Helpers.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Mvc.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Razor.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\conexion.dll.config
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTI.Data.dll.config
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Helpers.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Mvc.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.Razor.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Helpers.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.Razor.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.csproj.CopyComplete
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\InventarioTI.Logica\obj\Debug\InventarioTI.Logica.pdb
