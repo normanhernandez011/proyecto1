@@ -1,0 +1,12 @@
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\InventarioTI.Datos.dll.config
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\InventarioTI.Datos.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\InventarioTI.Datos.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\EntityFramework.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\EntityFramework.xml
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\obj\Debug\InventarioTI.Datos.csprojAssemblyReference.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\obj\Debug\InventarioTI.Datos.csproj.CoreCompileInputs.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\obj\Debug\InventarioTI.Datos.csproj.CopyComplete
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\obj\Debug\InventarioTI.Datos.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\InventarioTI.Datos\obj\Debug\InventarioTI.Datos.pdb

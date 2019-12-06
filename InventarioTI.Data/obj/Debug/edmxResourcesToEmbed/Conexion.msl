@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Inventario_TIModelStoreContainer" CdmEntityContainer="Inventario_TIEntities">
+    <EntitySetMapping Name="Bodegas">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Bodegas">
+        <MappingFragment StoreEntitySet="Bodegas">
+          <ScalarProperty Name="BodegaID" ColumnName="BodegaID" />
+          <ScalarProperty Name="BodegaDescripcion" ColumnName="BodegaDescripcion" />
+          <ScalarProperty Name="UbicacionID" ColumnName="UbicacionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventario">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Inventario">
+        <MappingFragment StoreEntitySet="Inventario">
+          <ScalarProperty Name="InventarioID" ColumnName="InventarioID" />
+          <ScalarProperty Name="ProductoID" ColumnName="ProductoID" />
+          <ScalarProperty Name="MovimientoID" ColumnName="MovimientoID" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Marcas">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="MarcaID" ColumnName="MarcaID" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movimientos">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Movimientos">
+        <MappingFragment StoreEntitySet="Movimientos">
+          <ScalarProperty Name="MovimientoID" ColumnName="MovimientoID" />
+          <ScalarProperty Name="TipoMovimientoID" ColumnName="TipoMovimientoID" />
+          <ScalarProperty Name="BodegaID" ColumnName="BodegaID" />
+          <ScalarProperty Name="UbicacionID" ColumnName="UbicacionID" />
+          <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="ProductoID" ColumnName="ProductoID" />
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="TipoProductoID" ColumnName="TipoProductoID" />
+          <ScalarProperty Name="MarcaID" ColumnName="MarcaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiposMovimientos">
+      <EntityTypeMapping TypeName="Inventario_TIModel.TiposMovimientos">
+        <MappingFragment StoreEntitySet="TiposMovimientos">
+          <ScalarProperty Name="TipoMovimientoID" ColumnName="TipoMovimientoID" />
+          <ScalarProperty Name="TipoMovimiento" ColumnName="TipoMovimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiposProducto">
+      <EntityTypeMapping TypeName="Inventario_TIModel.TiposProducto">
+        <MappingFragment StoreEntitySet="TiposProducto">
+          <ScalarProperty Name="TipoProductoID" ColumnName="TipoProductoID" />
+          <ScalarProperty Name="TipoProducto" ColumnName="TipoProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicacion">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Ubicacion">
+        <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="UbicacionID" ColumnName="UbicacionID" />
+          <ScalarProperty Name="Ubicacion1" ColumnName="Ubicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="Inventario_TIModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spInsertarBodegas" FunctionName="Inventario_TIModel.Store.spInsertarBodegas" />
+    <FunctionImportMapping FunctionImportName="spInsertarEmpleados" FunctionName="Inventario_TIModel.Store.spInsertarEmpleados" />
+    <FunctionImportMapping FunctionImportName="spInsertarInventario" FunctionName="Inventario_TIModel.Store.spInsertarInventario" />
+    <FunctionImportMapping FunctionImportName="spInsertarMarca" FunctionName="Inventario_TIModel.Store.spInsertarMarca" />
+    <FunctionImportMapping FunctionImportName="spInsertarMovimiento" FunctionName="Inventario_TIModel.Store.spInsertarMovimiento" />
+    <FunctionImportMapping FunctionImportName="spInsertarProductos" FunctionName="Inventario_TIModel.Store.spInsertarProductos" />
+    <FunctionImportMapping FunctionImportName="spInsertarTiposMovimientos" FunctionName="Inventario_TIModel.Store.spInsertarTiposMovimientos" />
+    <FunctionImportMapping FunctionImportName="spInsertarTiposProductos" FunctionName="Inventario_TIModel.Store.spInsertarTiposProductos" />
+    <FunctionImportMapping FunctionImportName="spInsertarUbicacion" FunctionName="Inventario_TIModel.Store.spInsertarUbicacion" />
+    <FunctionImportMapping FunctionImportName="spInsertarUsuario" FunctionName="Inventario_TIModel.Store.spInsertarUsuario" />
+  </EntityContainerMapping>
+</Mapping>
