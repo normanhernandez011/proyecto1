@@ -1,0 +1,28 @@
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\conexion.dll.config
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\conexion.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\conexion.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\obj\Debug\conexion.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\obj\Debug\conexion.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\obj\Debug\conexion.csproj.CopyComplete
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\obj\Debug\conexion.dll
+C:\Users\angel\Desktop\trabajos\proyecto Clase\ProyectoISf2\InventarioTI\conexion\obj\Debug\conexion.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\conexion.dll.config
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\conexion.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\conexion.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\obj\Debug\conexion.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\obj\Debug\conexion.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\obj\Debug\conexion.csproj.CopyComplete
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\obj\Debug\conexion.dll
+C:\Users\angel\Desktop\tareas\2019\IV\Vanguardia\Proyecto\InventarioTI\conexion\obj\Debug\conexion.pdb

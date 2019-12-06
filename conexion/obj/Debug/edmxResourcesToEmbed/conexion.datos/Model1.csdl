@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_INV_ACTIVOSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AGENCIA">
+    <Key>
+      <PropertyRef Name="ID_AGENCIA" />
+    </Key>
+    <Property Name="ID_AGENCIA" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_AGENCIA" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ID_MUNICIPIO" Type="Int32" Nullable="false" />
+    <Property Name="ID_EMP" Type="Int32" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MUNICIPIO" Relationship="Self.FK_AGENCIA_MUNICIPIO" FromRole="AGENCIA" ToRole="MUNICIPIO" />
+    <NavigationProperty Name="DEPTO" Relationship="Self.FK_DEPTO_ODEF_AGENCIA" FromRole="AGENCIA" ToRole="DEPTO" />
+    <NavigationProperty Name="ENCABEZADO_DPED" Relationship="Self.FK_ENCABEZADO_DPED_AGENCIA" FromRole="AGENCIA" ToRole="ENCABEZADO_DPED" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTO">
+    <Key>
+      <PropertyRef Name="ID_DEPARTAMENTO" />
+    </Key>
+    <Property Name="ID_DEPARTAMENTO" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_DEPARTAMENTO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MUNICIPIO" Relationship="Self.FK_MUNICIPIO_DEPARTAMENTO" FromRole="DEPARTAMENTO" ToRole="MUNICIPIO" />
+  </EntityType>
+  <EntityType Name="DEPTO">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_DEPTO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_AGENCIA" Type="Int32" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AGENCIA" Relationship="Self.FK_DEPTO_ODEF_AGENCIA" FromRole="DEPTO" ToRole="AGENCIA" />
+    <NavigationProperty Name="ENCABEZADO_CONTROL_EI" Relationship="Self.FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF" FromRole="DEPTO" ToRole="ENCABEZADO_CONTROL_EI" />
+    <NavigationProperty Name="ENCABEZADO_CONTROL_ME" Relationship="Self.FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF" FromRole="DEPTO" ToRole="ENCABEZADO_CONTROL_ME" />
+    <NavigationProperty Name="ENCABEZADO_DPME" Relationship="Self.FK_ENCABEZADO_DPME_DEPTO_ODEF" FromRole="DEPTO" ToRole="ENCABEZADO_DPME" />
+  </EntityType>
+  <EntityType Name="DETALLE_CONTROL_EI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="Int32" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_COMPRA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MES_DEPRECIACION" Type="DateTime" Precision="3" />
+    <Property Name="ID_PROVEEDOR" Type="Int32" Nullable="false" />
+    <Property Name="ID_TIPO_EQUIPO" Type="Int32" Nullable="false" />
+    <Property Name="ID_MARCA" Type="Int32" Nullable="false" />
+    <Property Name="COLOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MODELO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO_SERIE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TIPO_PROCESADOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="DISQUETERA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="LECTOR_DVD" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="LECTOR_SD_MMC" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="PARLANTES_EXTERNOS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="MONITOR_COLOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="MONITOR_SERIE" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="MONITOR_TAMANIO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MONITOR_TIPO" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="TECLADO_COLOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TECLADO_MODELO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MOUSE_COLOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UBICACION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="ID_EMPLEADO" Type="Int32" Nullable="false" />
+    <Property Name="CONDICION_ACTUAL" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_CONTROL_ME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="Int32" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CODIGO_NUEVO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_COMPRA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MES_DEPRECIACION" Type="DateTime" Precision="3" />
+    <Property Name="ID_PROVEEDOR" Type="Int32" Nullable="false" />
+    <Property Name="TIPO_MOBILIARIO" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_MARCA" Type="Int32" />
+    <Property Name="TIPO_MATERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DIVISIONES_GAVETAS" Type="Int32" />
+    <Property Name="MODELO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO_SERIE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UBICACION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="Int32" Nullable="false" />
+    <Property Name="CONDICION_ACTUAL" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_DPEI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="Int32" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_COMPRA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MESES" Type="Int32" />
+    <Property Name="NUM_CKE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="NUM_PDA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COSTO" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PORCIENTO" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="COSTO_PORCIENTO" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="VIDA" Type="Int32" Nullable="false" />
+    <Property Name="D_MES" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ACUMULADA" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="VALOR_LIBROS" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DEPRECIADO" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USUARIO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_DPME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="Int32" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_COMPRA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MESES" Type="Int32" />
+    <Property Name="NUM_CKE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="NUM_PDA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COSTO" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PORCIENTO" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="COSTO_PORCIENTO" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="VIDA" Type="Int32" Nullable="false" />
+    <Property Name="D_MES" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ACUMULADA" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="VALOR_LIBROS" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DEPRECIADO" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USUARIO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ENCABEZADO_DPME" Relationship="Self.FK_DETALLE_DPME_ENCABEZADO_DPME" FromRole="DETALLE_DPME" ToRole="ENCABEZADO_DPME" />
+  </EntityType>
+  <EntityType Name="DETALLE_TOMA_ME">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Toma_Inventario" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario_Responsable" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Codigo_Inventario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_TOMAEI">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario_Responsable" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Toma_Inventario" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Codigo_Inventario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="ID_EMPLEADO" />
+    </Key>
+    <Property Name="ID_EMPLEADO" Type="Int32" Nullable="false" />
+    <Property Name="CEDULA_EMPLEADO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NOMBRE_EMPLEADO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="PUESTO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EMPLEADO1" Relationship="Self.FK_EMPLEADO_EMPLEADO" FromRole="EMPLEADO" ToRole="EMPLEADO1" />
+    <NavigationProperty Name="EMPLEADO2" Relationship="Self.FK_EMPLEADO_EMPLEADO" FromRole="EMPLEADO1" ToRole="EMPLEADO" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_CONTROL_EI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="Int32" />
+    <Property Name="FECHA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DEPTO" Relationship="Self.FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF" FromRole="ENCABEZADO_CONTROL_EI" ToRole="DEPTO" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_CONTROL_ME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="Int32" />
+    <Property Name="FECHA" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DEPTO" Relationship="Self.FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF" FromRole="ENCABEZADO_CONTROL_ME" ToRole="DEPTO" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPED">
+    <Key>
+      <PropertyRef Name="ID_AGENCIA" />
+    </Key>
+    <Property Name="ID_AGENCIA" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_DEPRECIACION" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AGENCIA" Relationship="Self.FK_ENCABEZADO_DPED_AGENCIA" FromRole="ENCABEZADO_DPED" ToRole="AGENCIA" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPEI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_DEPRECIACION" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="Int32" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_DEPRECIACION" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DEPTO" Relationship="Self.FK_ENCABEZADO_DPME_DEPTO_ODEF" FromRole="ENCABEZADO_DPME" ToRole="DEPTO" />
+    <NavigationProperty Name="DETALLE_DPME" Relationship="Self.FK_DETALLE_DPME_ENCABEZADO_DPME" FromRole="ENCABEZADO_DPME" ToRole="DETALLE_DPME" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_TOMAEI">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_TomaInventario" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Usuario_Responsable" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MARCAS">
+    <Key>
+      <PropertyRef Name="ID_MARCA" />
+    </Key>
+    <Property Name="ID_MARCA" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MODULO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MUNICIPIO">
+    <Key>
+      <PropertyRef Name="ID_MUNICIPIO" />
+    </Key>
+    <Property Name="ID_MUNICIPIO" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_MUNICIPIO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_DEPARTAMENTO" Type="Int32" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AGENCIA" Relationship="Self.FK_AGENCIA_MUNICIPIO" FromRole="MUNICIPIO" ToRole="AGENCIA" />
+    <NavigationProperty Name="DEPARTAMENTO" Relationship="Self.FK_MUNICIPIO_DEPARTAMENTO" FromRole="MUNICIPIO" ToRole="DEPARTAMENTO" />
+  </EntityType>
+  <EntityType Name="OPERACIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDMODULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_PROVEEDOR" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CONTACTO" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_CONTACTO" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="USUARIO_RESPONSALE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROL_OPERACION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDROL" Type="Int32" Nullable="false" />
+    <Property Name="IDOPERACION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_CONTROL">
+    <Key>
+      <PropertyRef Name="ID_CONTROL" />
+    </Key>
+    <Property Name="ID_CONTROL" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CATALOGO_MARCA" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_EQUIPO">
+    <Key>
+      <PropertyRef Name="ID_TIPO_EQUIPO" />
+    </Key>
+    <Property Name="ID_TIPO_EQUIPO" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_EQUIPO_OFICINA">
+    <Key>
+      <PropertyRef Name="ID_TIPO_EQUIPO_OFICINA" />
+    </Key>
+    <Property Name="ID_TIPO_EQUIPO_OFICINA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AGENCIA_MUNICIPIO">
+    <End Role="MUNICIPIO" Type="Self.MUNICIPIO" Multiplicity="1" />
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MUNICIPIO">
+        <PropertyRef Name="ID_MUNICIPIO" />
+      </Principal>
+      <Dependent Role="AGENCIA">
+        <PropertyRef Name="ID_MUNICIPIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEPTO_ODEF_AGENCIA">
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="1" />
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AGENCIA">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Principal>
+      <Dependent Role="DEPTO">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_DPED_AGENCIA">
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="1" />
+    <End Role="ENCABEZADO_DPED" Type="Self.ENCABEZADO_DPED" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AGENCIA">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_DPED">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MUNICIPIO_DEPARTAMENTO">
+    <End Role="DEPARTAMENTO" Type="Self.DEPARTAMENTO" Multiplicity="1" />
+    <End Role="MUNICIPIO" Type="Self.MUNICIPIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="ID_DEPARTAMENTO" />
+      </Principal>
+      <Dependent Role="MUNICIPIO">
+        <PropertyRef Name="ID_DEPARTAMENTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_CONTROL_EI" Type="Self.ENCABEZADO_CONTROL_EI" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_CONTROL_EI">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_CONTROL_ME" Type="Self.ENCABEZADO_CONTROL_ME" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_CONTROL_ME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_DPME_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_DPME" Type="Self.ENCABEZADO_DPME" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLE_DPME_ENCABEZADO_DPME">
+    <End Role="ENCABEZADO_DPME" Type="Self.ENCABEZADO_DPME" Multiplicity="1" />
+    <End Role="DETALLE_DPME" Type="Self.DETALLE_DPME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ENCABEZADO_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="DETALLE_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLEADO_EMPLEADO">
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="1" />
+    <End Role="EMPLEADO1" Type="Self.EMPLEADO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Principal>
+      <Dependent Role="EMPLEADO1">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BD_INV_ACTIVOSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AGENCIA" EntityType="Self.AGENCIA" />
+    <EntitySet Name="DEPARTAMENTO" EntityType="Self.DEPARTAMENTO" />
+    <EntitySet Name="DEPTO" EntityType="Self.DEPTO" />
+    <EntitySet Name="DETALLE_CONTROL_EI" EntityType="Self.DETALLE_CONTROL_EI" />
+    <EntitySet Name="DETALLE_CONTROL_ME" EntityType="Self.DETALLE_CONTROL_ME" />
+    <EntitySet Name="DETALLE_DPEI" EntityType="Self.DETALLE_DPEI" />
+    <EntitySet Name="DETALLE_DPME" EntityType="Self.DETALLE_DPME" />
+    <EntitySet Name="DETALLE_TOMA_ME" EntityType="Self.DETALLE_TOMA_ME" />
+    <EntitySet Name="DETALLE_TOMAEI" EntityType="Self.DETALLE_TOMAEI" />
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" />
+    <EntitySet Name="ENCABEZADO_CONTROL_EI" EntityType="Self.ENCABEZADO_CONTROL_EI" />
+    <EntitySet Name="ENCABEZADO_CONTROL_ME" EntityType="Self.ENCABEZADO_CONTROL_ME" />
+    <EntitySet Name="ENCABEZADO_DPED" EntityType="Self.ENCABEZADO_DPED" />
+    <EntitySet Name="ENCABEZADO_DPEI" EntityType="Self.ENCABEZADO_DPEI" />
+    <EntitySet Name="ENCABEZADO_DPME" EntityType="Self.ENCABEZADO_DPME" />
+    <EntitySet Name="ENCABEZADO_TOMAEI" EntityType="Self.ENCABEZADO_TOMAEI" />
+    <EntitySet Name="MARCAS" EntityType="Self.MARCAS" />
+    <EntitySet Name="MODULO" EntityType="Self.MODULO" />
+    <EntitySet Name="MUNICIPIO" EntityType="Self.MUNICIPIO" />
+    <EntitySet Name="OPERACIONES" EntityType="Self.OPERACIONES" />
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" />
+    <EntitySet Name="ROL" EntityType="Self.ROL" />
+    <EntitySet Name="ROL_OPERACION" EntityType="Self.ROL_OPERACION" />
+    <EntitySet Name="TIPO_CONTROL" EntityType="Self.TIPO_CONTROL" />
+    <EntitySet Name="TIPO_EQUIPO" EntityType="Self.TIPO_EQUIPO" />
+    <EntitySet Name="TIPO_EQUIPO_OFICINA" EntityType="Self.TIPO_EQUIPO_OFICINA" />
+    <AssociationSet Name="FK_AGENCIA_MUNICIPIO" Association="Self.FK_AGENCIA_MUNICIPIO">
+      <End Role="MUNICIPIO" EntitySet="MUNICIPIO" />
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEPTO_ODEF_AGENCIA" Association="Self.FK_DEPTO_ODEF_AGENCIA">
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+      <End Role="DEPTO" EntitySet="DEPTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_DPED_AGENCIA" Association="Self.FK_ENCABEZADO_DPED_AGENCIA">
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+      <End Role="ENCABEZADO_DPED" EntitySet="ENCABEZADO_DPED" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MUNICIPIO_DEPARTAMENTO" Association="Self.FK_MUNICIPIO_DEPARTAMENTO">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="MUNICIPIO" EntitySet="MUNICIPIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_CONTROL_EI" EntitySet="ENCABEZADO_CONTROL_EI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_CONTROL_ME" EntitySet="ENCABEZADO_CONTROL_ME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_DPME_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_DPME_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_DPME" EntitySet="ENCABEZADO_DPME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLE_DPME_ENCABEZADO_DPME" Association="Self.FK_DETALLE_DPME_ENCABEZADO_DPME">
+      <End Role="ENCABEZADO_DPME" EntitySet="ENCABEZADO_DPME" />
+      <End Role="DETALLE_DPME" EntitySet="DETALLE_DPME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLEADO_EMPLEADO" Association="Self.FK_EMPLEADO_EMPLEADO">
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+      <End Role="EMPLEADO1" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <FunctionImport Name="CodeCorrelaticoME" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="CodeCorrelativoEI" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="ELIMINAR_EI">
+      <Parameter Name="CODIGOINVENTARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarME">
+      <Parameter Name="CODIGOINVENTARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_EQUIPO_ME">
+      <Parameter Name="ID_DEPTO_ODEF" Mode="In" Type="Int32" />
+      <Parameter Name="NUMERO_REFERENCIA" Mode="In" Type="Int32" />
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="FECHA_COMPRA" Mode="In" Type="DateTime" />
+      <Parameter Name="MES_DEPRECIACION" Mode="In" Type="DateTime" />
+      <Parameter Name="ID_PROVEEDOR" Mode="In" Type="Int32" />
+      <Parameter Name="TIPO_MOBILIARIO" Mode="In" Type="String" />
+      <Parameter Name="ID_MARCA" Mode="In" Type="Int32" />
+      <Parameter Name="TIPO_MATERIAL" Mode="In" Type="String" />
+      <Parameter Name="COLOR" Mode="In" Type="String" />
+      <Parameter Name="DIVISIONES_GAVETAS" Mode="In" Type="Int32" />
+      <Parameter Name="MODELO" Mode="In" Type="String" />
+      <Parameter Name="NUMERO_SERIE" Mode="In" Type="String" />
+      <Parameter Name="UBICACION" Mode="In" Type="String" />
+      <Parameter Name="ID_EMPLEADO" Mode="In" Type="Int32" />
+      <Parameter Name="CONDICION_ACTUAL" Mode="In" Type="String" />
+      <Parameter Name="USUARIO_RESPONSABLE" Mode="In" Type="String" />
+      <Parameter Name="ESTADO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_INVENTARIO_INFORMATICA">
+      <Parameter Name="ID_DEPTO" Mode="In" Type="Int32" />
+      <Parameter Name="NUMERO_REFERENCIA" Mode="In" Type="Int32" />
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="FECHA_COMPRA" Mode="In" Type="DateTime" />
+      <Parameter Name="MES_DEPRECIACION" Mode="In" Type="DateTime" />
+      <Parameter Name="ID_PROVEEDOR" Mode="In" Type="Int32" />
+      <Parameter Name="ID_TIPO_EQUIPO" Mode="In" Type="Int32" />
+      <Parameter Name="ID_MARCA" Mode="In" Type="Int32" />
+      <Parameter Name="COLOR" Mode="In" Type="String" />
+      <Parameter Name="MODELO" Mode="In" Type="String" />
+      <Parameter Name="NUMERO_SERIE" Mode="In" Type="String" />
+      <Parameter Name="TIPO_PROCESADOR" Mode="In" Type="String" />
+      <Parameter Name="DISQUETERA" Mode="In" Type="String" />
+      <Parameter Name="LECTOR_DVD" Mode="In" Type="String" />
+      <Parameter Name="LECTOR_SD_MMC" Mode="In" Type="String" />
+      <Parameter Name="PARLANTES_EXTERNOS" Mode="In" Type="String" />
+      <Parameter Name="MONITOR_COLOR" Mode="In" Type="String" />
+      <Parameter Name="MONITOR_SERIE" Mode="In" Type="String" />
+      <Parameter Name="MONITOR_TAMANIO" Mode="In" Type="String" />
+      <Parameter Name="MONITOR_TIPO" Mode="In" Type="String" />
+      <Parameter Name="TECLADO_COLOR" Mode="In" Type="String" />
+      <Parameter Name="TECLADO_MODELO" Mode="In" Type="String" />
+      <Parameter Name="MOUSE_COLOR" Mode="In" Type="String" />
+      <Parameter Name="UBICACION" Mode="In" Type="String" />
+      <Parameter Name="ID_EMPLEADO" Mode="In" Type="Int32" />
+      <Parameter Name="CONDICION_ACTUAL" Mode="In" Type="String" />
+      <Parameter Name="USUARIO_RESPONSABLE" Mode="In" Type="String" />
+      <Parameter Name="ESTADO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertareTomaEI">
+      <Parameter Name="Departamento" Mode="In" Type="String" />
+      <Parameter Name="Usuario_Responsable" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Toma_Inventario" Mode="In" Type="DateTime" />
+      <Parameter Name="Codigo_Inventario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MODIFICAR_ME">
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="NUMERO_SERIE" Mode="In" Type="String" />
+      <Parameter Name="TIPO_MATERIAL" Mode="In" Type="String" />
+      <Parameter Name="UBICACION" Mode="In" Type="String" />
+      <Parameter Name="CONDICION_ACTUAL" Mode="In" Type="String" />
+      <Parameter Name="USUARIO_RESPONSABLE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ModificarEI">
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="NUMERO_SERIE" Mode="In" Type="String" />
+      <Parameter Name="PARLANTES_EXTERNOS" Mode="In" Type="String" />
+      <Parameter Name="UBICACION" Mode="In" Type="String" />
+      <Parameter Name="CONDICION_ACTUAL" Mode="In" Type="String" />
+      <Parameter Name="USUARIO_RESPONSABLE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ActivosSelect">
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacion">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacionAA">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacionAP">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacionED">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacionEI">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoDepreciacionVE">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CalculoReserva">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CopiaHistoricaAA" />
+    <FunctionImport Name="sp_CopiaHistoricaAP" />
+    <FunctionImport Name="sp_CopiaHistoricaED" />
+    <FunctionImport Name="sp_CopiaHistoricaEI" />
+    <FunctionImport Name="sp_CopiaHistoricaME" />
+    <FunctionImport Name="sp_CopiaHistoricaRE" />
+    <FunctionImport Name="sp_CopiaHistoricaVE" />
+    <FunctionImport Name="sp_DepreciacionIndividualAA">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_agen" Mode="In" Type="Int32" />
+      <Parameter Name="id_me" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DepreciacionIndividualAP">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_agen" Mode="In" Type="Int32" />
+      <Parameter Name="id_me" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DepreciacionIndividualED">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_agen" Mode="In" Type="Int32" />
+      <Parameter Name="id_ed" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DepreciacionIndividualEI">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_depto" Mode="In" Type="Int32" />
+      <Parameter Name="cod_inv" Mode="In" Type="String" />
+      <Parameter Name="num_ref" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DepreciacionIndividualME">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_depto" Mode="In" Type="Int32" />
+      <Parameter Name="cod_inv" Mode="In" Type="String" />
+      <Parameter Name="num_ref" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DepreciacionIndividualVE">
+      <Parameter Name="fechacierre" Mode="In" Type="DateTime" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="id_agen" Mode="In" Type="Int32" />
+      <Parameter Name="id_ve" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_INSERTAR_TOMA_ME">
+      <Parameter Name="Departamento" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Toma_Inventario" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario_Responsable" Mode="In" Type="String" />
+      <Parameter Name="Codigo_Inventario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertarCostoDePEI">
+      <Parameter Name="ID_DEPTO_ODEF" Mode="In" Type="Int32" />
+      <Parameter Name="NUMERO_REFERENCIA" Mode="In" Type="Int32" />
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="FECHA_COMPRA" Mode="In" Type="DateTime" />
+      <Parameter Name="NUM_CKE" Mode="In" Type="String" />
+      <Parameter Name="NUM_PDA" Mode="In" Type="String" />
+      <Parameter Name="COSTO" Mode="In" Type="Decimal" />
+      <Parameter Name="VIDA" Mode="In" Type="Int32" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+      <Parameter Name="ESTADO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_InsertarDDME">
+      <Parameter Name="ID_DEPTO_ODEF" Mode="In" Type="Int32" />
+      <Parameter Name="NUMERO_REFERENCIA" Mode="In" Type="Int32" />
+      <Parameter Name="CODIGO_INVENTARIO" Mode="In" Type="String" />
+      <Parameter Name="FECHA_COMPRA" Mode="In" Type="DateTime" />
+      <Parameter Name="NUM_CKE" Mode="In" Type="String" />
+      <Parameter Name="NUM_PDA" Mode="In" Type="String" />
+      <Parameter Name="COSTO" Mode="In" Type="Decimal" />
+      <Parameter Name="VIDA" Mode="In" Type="Int32" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+      <Parameter Name="ESTADO" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="SegUsuario" EntityType="BD_INV_ACTIVOSModel.SegUsuario" />
+    <EntitySet Name="USUARIO" EntityType="BD_INV_ACTIVOSModel.USUARIO" />
+  </EntityContainer>
+  <EntityType Name="SegUsuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioCreacion" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioModificacion" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USUARIO1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ESTADO" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CONTRASENIA" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

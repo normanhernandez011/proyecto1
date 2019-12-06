@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ControlCuentasDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_Cargos">
+    <Key>
+      <PropertyRef Name="Cargo_ID" />
+    </Key>
+    <Property Name="Cargo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cargo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Categorias_Iglesias">
+    <Key>
+      <PropertyRef Name="Categoria_Iglesia_ID" />
+    </Key>
+    <Property Name="Categoria_Iglesia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria_Iglesia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Cuentas">
+    <Key>
+      <PropertyRef Name="Cuenta_ID" />
+    </Key>
+    <Property Name="Cuenta_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cuenta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Iglesias">
+    <Key>
+      <PropertyRef Name="Iglesia_ID" />
+    </Key>
+    <Property Name="Iglesia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Iglesia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Categoria_Iglesia_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_Ingresos">
+    <Key>
+      <PropertyRef Name="Ingreso_ID" />
+    </Key>
+    <Property Name="Ingreso_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Responsable_ID" Type="Int32" />
+    <Property Name="Cuenta_ID" Type="Int32" />
+    <Property Name="Iglesia_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_Responsables">
+    <Key>
+      <PropertyRef Name="Responsable_ID" />
+    </Key>
+    <Property Name="Responsable_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Responsable" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Cargo_ID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ControlCuentasDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_Cargos" EntityType="Self.TBL_Cargos" />
+    <EntitySet Name="TBL_Categorias_Iglesias" EntityType="Self.TBL_Categorias_Iglesias" />
+    <EntitySet Name="TBL_Cuentas" EntityType="Self.TBL_Cuentas" />
+    <EntitySet Name="TBL_Iglesias" EntityType="Self.TBL_Iglesias" />
+    <EntitySet Name="TBL_Ingresos" EntityType="Self.TBL_Ingresos" />
+    <EntitySet Name="TBL_Responsables" EntityType="Self.TBL_Responsables" />
+  </EntityContainer>
+</Schema>

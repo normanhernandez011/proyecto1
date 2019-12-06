@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_INV_ACTIVOSModelStoreContainer" CdmEntityContainer="BD_INV_ACTIVOSEntities">
+    <EntitySetMapping Name="AGENCIA">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.AGENCIA">
+        <MappingFragment StoreEntitySet="AGENCIA">
+          <ScalarProperty Name="ID_AGENCIA" ColumnName="ID_AGENCIA" />
+          <ScalarProperty Name="NOMBRE_AGENCIA" ColumnName="NOMBRE_AGENCIA" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="ID_MUNICIPIO" ColumnName="ID_MUNICIPIO" />
+          <ScalarProperty Name="ID_EMP" ColumnName="ID_EMP" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTAMENTO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DEPARTAMENTO">
+        <MappingFragment StoreEntitySet="DEPARTAMENTO">
+          <ScalarProperty Name="ID_DEPARTAMENTO" ColumnName="ID_DEPARTAMENTO" />
+          <ScalarProperty Name="NOMBRE_DEPARTAMENTO" ColumnName="NOMBRE_DEPARTAMENTO" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPTO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DEPTO">
+        <MappingFragment StoreEntitySet="DEPTO">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NOMBRE_DEPTO" ColumnName="NOMBRE_DEPTO" />
+          <ScalarProperty Name="ID_AGENCIA" ColumnName="ID_AGENCIA" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_CONTROL_EI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_CONTROL_EI">
+        <MappingFragment StoreEntitySet="DETALLE_CONTROL_EI">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_REFERENCIA" ColumnName="NUMERO_REFERENCIA" />
+          <ScalarProperty Name="CODIGO_INVENTARIO" ColumnName="CODIGO_INVENTARIO" />
+          <ScalarProperty Name="FECHA_COMPRA" ColumnName="FECHA_COMPRA" />
+          <ScalarProperty Name="MES_DEPRECIACION" ColumnName="MES_DEPRECIACION" />
+          <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
+          <ScalarProperty Name="ID_TIPO_EQUIPO" ColumnName="ID_TIPO_EQUIPO" />
+          <ScalarProperty Name="ID_MARCA" ColumnName="ID_MARCA" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+          <ScalarProperty Name="NUMERO_SERIE" ColumnName="NUMERO_SERIE" />
+          <ScalarProperty Name="TIPO_PROCESADOR" ColumnName="TIPO_PROCESADOR" />
+          <ScalarProperty Name="DISQUETERA" ColumnName="DISQUETERA" />
+          <ScalarProperty Name="LECTOR_DVD" ColumnName="LECTOR_DVD" />
+          <ScalarProperty Name="LECTOR_SD_MMC" ColumnName="LECTOR_SD_MMC" />
+          <ScalarProperty Name="PARLANTES_EXTERNOS" ColumnName="PARLANTES_EXTERNOS" />
+          <ScalarProperty Name="MONITOR_COLOR" ColumnName="MONITOR_COLOR" />
+          <ScalarProperty Name="MONITOR_SERIE" ColumnName="MONITOR_SERIE" />
+          <ScalarProperty Name="MONITOR_TAMANIO" ColumnName="MONITOR_TAMANIO" />
+          <ScalarProperty Name="MONITOR_TIPO" ColumnName="MONITOR_TIPO" />
+          <ScalarProperty Name="TECLADO_COLOR" ColumnName="TECLADO_COLOR" />
+          <ScalarProperty Name="TECLADO_MODELO" ColumnName="TECLADO_MODELO" />
+          <ScalarProperty Name="MOUSE_COLOR" ColumnName="MOUSE_COLOR" />
+          <ScalarProperty Name="UBICACION" ColumnName="UBICACION" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="CONDICION_ACTUAL" ColumnName="CONDICION_ACTUAL" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_CONTROL_ME">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_CONTROL_ME">
+        <MappingFragment StoreEntitySet="DETALLE_CONTROL_ME">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_REFERENCIA" ColumnName="NUMERO_REFERENCIA" />
+          <ScalarProperty Name="CODIGO_INVENTARIO" ColumnName="CODIGO_INVENTARIO" />
+          <ScalarProperty Name="CODIGO_NUEVO" ColumnName="CODIGO_NUEVO" />
+          <ScalarProperty Name="FECHA_COMPRA" ColumnName="FECHA_COMPRA" />
+          <ScalarProperty Name="MES_DEPRECIACION" ColumnName="MES_DEPRECIACION" />
+          <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
+          <ScalarProperty Name="TIPO_MOBILIARIO" ColumnName="TIPO_MOBILIARIO" />
+          <ScalarProperty Name="ID_MARCA" ColumnName="ID_MARCA" />
+          <ScalarProperty Name="TIPO_MATERIAL" ColumnName="TIPO_MATERIAL" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="DIVISIONES_GAVETAS" ColumnName="DIVISIONES_GAVETAS" />
+          <ScalarProperty Name="MODELO" ColumnName="MODELO" />
+          <ScalarProperty Name="NUMERO_SERIE" ColumnName="NUMERO_SERIE" />
+          <ScalarProperty Name="UBICACION" ColumnName="UBICACION" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="CONDICION_ACTUAL" ColumnName="CONDICION_ACTUAL" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_DPEI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_DPEI">
+        <MappingFragment StoreEntitySet="DETALLE_DPEI">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_REFERENCIA" ColumnName="NUMERO_REFERENCIA" />
+          <ScalarProperty Name="CODIGO_INVENTARIO" ColumnName="CODIGO_INVENTARIO" />
+          <ScalarProperty Name="FECHA_COMPRA" ColumnName="FECHA_COMPRA" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="NUM_CKE" ColumnName="NUM_CKE" />
+          <ScalarProperty Name="NUM_PDA" ColumnName="NUM_PDA" />
+          <ScalarProperty Name="COSTO" ColumnName="COSTO" />
+          <ScalarProperty Name="PORCIENTO" ColumnName="PORCIENTO" />
+          <ScalarProperty Name="COSTO_PORCIENTO" ColumnName="COSTO_PORCIENTO" />
+          <ScalarProperty Name="VIDA" ColumnName="VIDA" />
+          <ScalarProperty Name="D_MES" ColumnName="D_MES" />
+          <ScalarProperty Name="ACUMULADA" ColumnName="ACUMULADA" />
+          <ScalarProperty Name="VALOR_LIBROS" ColumnName="VALOR_LIBROS" />
+          <ScalarProperty Name="DEPRECIADO" ColumnName="DEPRECIADO" />
+          <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_DPME">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_DPME">
+        <MappingFragment StoreEntitySet="DETALLE_DPME">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_REFERENCIA" ColumnName="NUMERO_REFERENCIA" />
+          <ScalarProperty Name="CODIGO_INVENTARIO" ColumnName="CODIGO_INVENTARIO" />
+          <ScalarProperty Name="FECHA_COMPRA" ColumnName="FECHA_COMPRA" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="NUM_CKE" ColumnName="NUM_CKE" />
+          <ScalarProperty Name="NUM_PDA" ColumnName="NUM_PDA" />
+          <ScalarProperty Name="COSTO" ColumnName="COSTO" />
+          <ScalarProperty Name="PORCIENTO" ColumnName="PORCIENTO" />
+          <ScalarProperty Name="COSTO_PORCIENTO" ColumnName="COSTO_PORCIENTO" />
+          <ScalarProperty Name="VIDA" ColumnName="VIDA" />
+          <ScalarProperty Name="D_MES" ColumnName="D_MES" />
+          <ScalarProperty Name="ACUMULADA" ColumnName="ACUMULADA" />
+          <ScalarProperty Name="VALOR_LIBROS" ColumnName="VALOR_LIBROS" />
+          <ScalarProperty Name="DEPRECIADO" ColumnName="DEPRECIADO" />
+          <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_TOMA_ME">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_TOMA_ME">
+        <MappingFragment StoreEntitySet="DETALLE_TOMA_ME">
+          <ScalarProperty Name="No_Inventario" ColumnName="No_Inventario" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Fecha_Toma_Inventario" ColumnName="Fecha_Toma_Inventario" />
+          <ScalarProperty Name="Usuario_Responsable" ColumnName="Usuario_Responsable" />
+          <ScalarProperty Name="Codigo_Inventario" ColumnName="Codigo_Inventario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_TOMAEI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.DETALLE_TOMAEI">
+        <MappingFragment StoreEntitySet="DETALLE_TOMAEI">
+          <ScalarProperty Name="No_Inventario" ColumnName="No_Inventario" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Usuario_Responsable" ColumnName="Usuario_Responsable" />
+          <ScalarProperty Name="Fecha_Toma_Inventario" ColumnName="Fecha_Toma_Inventario" />
+          <ScalarProperty Name="Codigo_Inventario" ColumnName="Codigo_Inventario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="CEDULA_EMPLEADO" ColumnName="CEDULA_EMPLEADO" />
+          <ScalarProperty Name="NOMBRE_EMPLEADO" ColumnName="NOMBRE_EMPLEADO" />
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="PUESTO" ColumnName="PUESTO" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_CONTROL_EI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_CONTROL_EI">
+        <MappingFragment StoreEntitySet="ENCABEZADO_CONTROL_EI">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_CONTROL_ME">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_CONTROL_ME">
+        <MappingFragment StoreEntitySet="ENCABEZADO_CONTROL_ME">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_DPED">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_DPED">
+        <MappingFragment StoreEntitySet="ENCABEZADO_DPED">
+          <ScalarProperty Name="ID_AGENCIA" ColumnName="ID_AGENCIA" />
+          <ScalarProperty Name="NUMERO_CUENTA" ColumnName="NUMERO_CUENTA" />
+          <ScalarProperty Name="FECHA_DEPRECIACION" ColumnName="FECHA_DEPRECIACION" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_DPEI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_DPEI">
+        <MappingFragment StoreEntitySet="ENCABEZADO_DPEI">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_CUENTA" ColumnName="NUMERO_CUENTA" />
+          <ScalarProperty Name="FECHA_DEPRECIACION" ColumnName="FECHA_DEPRECIACION" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_DPME">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_DPME">
+        <MappingFragment StoreEntitySet="ENCABEZADO_DPME">
+          <ScalarProperty Name="ID_DEPTO" ColumnName="ID_DEPTO" />
+          <ScalarProperty Name="NUMERO_CUENTA" ColumnName="NUMERO_CUENTA" />
+          <ScalarProperty Name="FECHA_DEPRECIACION" ColumnName="FECHA_DEPRECIACION" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENCABEZADO_TOMAEI">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ENCABEZADO_TOMAEI">
+        <MappingFragment StoreEntitySet="ENCABEZADO_TOMAEI">
+          <ScalarProperty Name="No_Inventario" ColumnName="No_Inventario" />
+          <ScalarProperty Name="Fecha_TomaInventario" ColumnName="Fecha_TomaInventario" />
+          <ScalarProperty Name="Usuario_Responsable" ColumnName="Usuario_Responsable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MARCAS">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.MARCAS">
+        <MappingFragment StoreEntitySet="MARCAS">
+          <ScalarProperty Name="ID_MARCA" ColumnName="ID_MARCA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MODULO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.MODULO">
+        <MappingFragment StoreEntitySet="MODULO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MUNICIPIO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.MUNICIPIO">
+        <MappingFragment StoreEntitySet="MUNICIPIO">
+          <ScalarProperty Name="ID_MUNICIPIO" ColumnName="ID_MUNICIPIO" />
+          <ScalarProperty Name="NOMBRE_MUNICIPIO" ColumnName="NOMBRE_MUNICIPIO" />
+          <ScalarProperty Name="ID_DEPARTAMENTO" ColumnName="ID_DEPARTAMENTO" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPERACIONES">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.OPERACIONES">
+        <MappingFragment StoreEntitySet="OPERACIONES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="IDMODULO" ColumnName="IDMODULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVEEDOR">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.PROVEEDOR">
+        <MappingFragment StoreEntitySet="PROVEEDOR">
+          <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
+          <ScalarProperty Name="NOMBRE_PROVEEDOR" ColumnName="NOMBRE_PROVEEDOR" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="CONTACTO" ColumnName="CONTACTO" />
+          <ScalarProperty Name="TELEFONO_CONTACTO" ColumnName="TELEFONO_CONTACTO" />
+          <ScalarProperty Name="USUARIO_RESPONSALE" ColumnName="USUARIO_RESPONSALE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROL">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ROL">
+        <MappingFragment StoreEntitySet="ROL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROL_OPERACION">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.ROL_OPERACION">
+        <MappingFragment StoreEntitySet="ROL_OPERACION">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDROL" ColumnName="IDROL" />
+          <ScalarProperty Name="IDOPERACION" ColumnName="IDOPERACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CONTROL">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.TIPO_CONTROL">
+        <MappingFragment StoreEntitySet="TIPO_CONTROL">
+          <ScalarProperty Name="ID_CONTROL" ColumnName="ID_CONTROL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CATALOGO_MARCA" ColumnName="CATALOGO_MARCA" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_EQUIPO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.TIPO_EQUIPO">
+        <MappingFragment StoreEntitySet="TIPO_EQUIPO">
+          <ScalarProperty Name="ID_TIPO_EQUIPO" ColumnName="ID_TIPO_EQUIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="USUARIO_RESPONSABLE" ColumnName="USUARIO_RESPONSABLE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_EQUIPO_OFICINA">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.TIPO_EQUIPO_OFICINA">
+        <MappingFragment StoreEntitySet="TIPO_EQUIPO_OFICINA">
+          <ScalarProperty Name="ID_TIPO_EQUIPO_OFICINA" ColumnName="ID_TIPO_EQUIPO_OFICINA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CodeCorrelaticoME" FunctionName="BD_INV_ACTIVOSModel.Store.CodeCorrelaticoME" />
+    <FunctionImportMapping FunctionImportName="CodeCorrelativoEI" FunctionName="BD_INV_ACTIVOSModel.Store.CodeCorrelativoEI" />
+    <FunctionImportMapping FunctionImportName="ELIMINAR_EI" FunctionName="BD_INV_ACTIVOSModel.Store.ELIMINAR_EI" />
+    <FunctionImportMapping FunctionImportName="EliminarME" FunctionName="BD_INV_ACTIVOSModel.Store.EliminarME" />
+    <FunctionImportMapping FunctionImportName="INSERT_EQUIPO_ME" FunctionName="BD_INV_ACTIVOSModel.Store.INSERT_EQUIPO_ME" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTARIO_INFORMATICA" FunctionName="BD_INV_ACTIVOSModel.Store.INSERT_INVENTARIO_INFORMATICA" />
+    <FunctionImportMapping FunctionImportName="InsertareTomaEI" FunctionName="BD_INV_ACTIVOSModel.Store.InsertareTomaEI" />
+    <FunctionImportMapping FunctionImportName="MODIFICAR_ME" FunctionName="BD_INV_ACTIVOSModel.Store.MODIFICAR_ME" />
+    <FunctionImportMapping FunctionImportName="ModificarEI" FunctionName="BD_INV_ACTIVOSModel.Store.ModificarEI" />
+    <FunctionImportMapping FunctionImportName="SP_ActivosSelect" FunctionName="BD_INV_ACTIVOSModel.Store.SP_ActivosSelect" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacion" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacion" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacionAA" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacionAA" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacionAP" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacionAP" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacionED" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacionED" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacionEI" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacionEI" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoDepreciacionVE" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoDepreciacionVE" />
+    <FunctionImportMapping FunctionImportName="sp_CalculoReserva" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CalculoReserva" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaAA" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaAA" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaAP" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaAP" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaED" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaED" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaEI" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaEI" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaME" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaME" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaRE" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaRE" />
+    <FunctionImportMapping FunctionImportName="sp_CopiaHistoricaVE" FunctionName="BD_INV_ACTIVOSModel.Store.sp_CopiaHistoricaVE" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualAA" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualAA" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualAP" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualAP" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualED" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualED" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualEI" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualEI" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualME" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualME" />
+    <FunctionImportMapping FunctionImportName="sp_DepreciacionIndividualVE" FunctionName="BD_INV_ACTIVOSModel.Store.sp_DepreciacionIndividualVE" />
+    <FunctionImportMapping FunctionImportName="SP_INSERTAR_TOMA_ME" FunctionName="BD_INV_ACTIVOSModel.Store.SP_INSERTAR_TOMA_ME" />
+    <FunctionImportMapping FunctionImportName="SP_InsertarCostoDePEI" FunctionName="BD_INV_ACTIVOSModel.Store.SP_InsertarCostoDePEI" />
+    <FunctionImportMapping FunctionImportName="SP_InsertarDDME" FunctionName="BD_INV_ACTIVOSModel.Store.SP_InsertarDDME" />
+    <EntitySetMapping Name="SegUsuario">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.SegUsuario">
+        <MappingFragment StoreEntitySet="SegUsuario">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="UsuarioModificacion" ColumnName="UsuarioModificacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="BD_INV_ACTIVOSModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="CONTRASENIA" ColumnName="CONTRASENIA" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="USUARIO1" ColumnName="USUARIO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

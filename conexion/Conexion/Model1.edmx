@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ControlCuentasDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TBL_Cargos">
+          <Key>
+            <PropertyRef Name="Cargo_ID" />
+          </Key>
+          <Property Name="Cargo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cargo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TBL_Categorias_Iglesias">
+          <Key>
+            <PropertyRef Name="Categoria_Iglesia_ID" />
+          </Key>
+          <Property Name="Categoria_Iglesia_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Categoria_Iglesia" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TBL_Cuentas">
+          <Key>
+            <PropertyRef Name="Cuenta_ID" />
+          </Key>
+          <Property Name="Cuenta_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cuenta" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'ControlCuentasDB.dbo.TBL_Egresos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="TBL_Egresos">
+          <Property Name="Egreso_ID" Type="int" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+          <Property Name="Fecha" Type="date" />
+          <Property Name="Responsable_ID" Type="int" />
+          <Property Name="Cuenta_ID" Type="int" />
+          <Property Name="Iglesia_ID" Type="int" />
+        </EntityType>-->
+        <EntityType Name="TBL_Iglesias">
+          <Key>
+            <PropertyRef Name="Iglesia_ID" />
+          </Key>
+          <Property Name="Iglesia_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Iglesia" Type="varchar" MaxLength="100" />
+          <Property Name="Categoria_Iglesia_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TBL_Ingresos">
+          <Key>
+            <PropertyRef Name="Ingreso_ID" />
+          </Key>
+          <Property Name="Ingreso_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+          <Property Name="Fecha" Type="date" />
+          <Property Name="Responsable_ID" Type="int" />
+          <Property Name="Cuenta_ID" Type="int" />
+          <Property Name="Iglesia_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TBL_Responsables">
+          <Key>
+            <PropertyRef Name="Responsable_ID" />
+          </Key>
+          <Property Name="Responsable_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Responsable" Type="varchar" MaxLength="100" />
+          <Property Name="Cargo_ID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ControlCuentasDBModelStoreContainer">
+          <EntitySet Name="TBL_Cargos" EntityType="Self.TBL_Cargos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Categorias_Iglesias" EntityType="Self.TBL_Categorias_Iglesias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Cuentas" EntityType="Self.TBL_Cuentas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Iglesias" EntityType="Self.TBL_Iglesias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Ingresos" EntityType="Self.TBL_Ingresos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBL_Responsables" EntityType="Self.TBL_Responsables" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ControlCuentasDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBL_Cargos">
+          <Key>
+            <PropertyRef Name="Cargo_ID" />
+          </Key>
+          <Property Name="Cargo_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cargo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TBL_Categorias_Iglesias">
+          <Key>
+            <PropertyRef Name="Categoria_Iglesia_ID" />
+          </Key>
+          <Property Name="Categoria_Iglesia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Categoria_Iglesia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TBL_Cuentas">
+          <Key>
+            <PropertyRef Name="Cuenta_ID" />
+          </Key>
+          <Property Name="Cuenta_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cuenta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TBL_Iglesias">
+          <Key>
+            <PropertyRef Name="Iglesia_ID" />
+          </Key>
+          <Property Name="Iglesia_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Iglesia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Categoria_Iglesia_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TBL_Ingresos">
+          <Key>
+            <PropertyRef Name="Ingreso_ID" />
+          </Key>
+          <Property Name="Ingreso_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha" Type="DateTime" Precision="0" />
+          <Property Name="Responsable_ID" Type="Int32" />
+          <Property Name="Cuenta_ID" Type="Int32" />
+          <Property Name="Iglesia_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TBL_Responsables">
+          <Key>
+            <PropertyRef Name="Responsable_ID" />
+          </Key>
+          <Property Name="Responsable_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Responsable" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Cargo_ID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="ControlCuentasDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TBL_Cargos" EntityType="Self.TBL_Cargos" />
+          <EntitySet Name="TBL_Categorias_Iglesias" EntityType="Self.TBL_Categorias_Iglesias" />
+          <EntitySet Name="TBL_Cuentas" EntityType="Self.TBL_Cuentas" />
+          <EntitySet Name="TBL_Iglesias" EntityType="Self.TBL_Iglesias" />
+          <EntitySet Name="TBL_Ingresos" EntityType="Self.TBL_Ingresos" />
+          <EntitySet Name="TBL_Responsables" EntityType="Self.TBL_Responsables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ControlCuentasDBModelStoreContainer" CdmEntityContainer="ControlCuentasDBEntities">
+          <EntitySetMapping Name="TBL_Cargos">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Cargos">
+              <MappingFragment StoreEntitySet="TBL_Cargos">
+                <ScalarProperty Name="Cargo_ID" ColumnName="Cargo_ID" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Categorias_Iglesias">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Categorias_Iglesias">
+              <MappingFragment StoreEntitySet="TBL_Categorias_Iglesias">
+                <ScalarProperty Name="Categoria_Iglesia_ID" ColumnName="Categoria_Iglesia_ID" />
+                <ScalarProperty Name="Categoria_Iglesia" ColumnName="Categoria_Iglesia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Cuentas">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Cuentas">
+              <MappingFragment StoreEntitySet="TBL_Cuentas">
+                <ScalarProperty Name="Cuenta_ID" ColumnName="Cuenta_ID" />
+                <ScalarProperty Name="Cuenta" ColumnName="Cuenta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Iglesias">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Iglesias">
+              <MappingFragment StoreEntitySet="TBL_Iglesias">
+                <ScalarProperty Name="Iglesia_ID" ColumnName="Iglesia_ID" />
+                <ScalarProperty Name="Iglesia" ColumnName="Iglesia" />
+                <ScalarProperty Name="Categoria_Iglesia_ID" ColumnName="Categoria_Iglesia_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Ingresos">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Ingresos">
+              <MappingFragment StoreEntitySet="TBL_Ingresos">
+                <ScalarProperty Name="Ingreso_ID" ColumnName="Ingreso_ID" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Responsable_ID" ColumnName="Responsable_ID" />
+                <ScalarProperty Name="Cuenta_ID" ColumnName="Cuenta_ID" />
+                <ScalarProperty Name="Iglesia_ID" ColumnName="Iglesia_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_Responsables">
+            <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Responsables">
+              <MappingFragment StoreEntitySet="TBL_Responsables">
+                <ScalarProperty Name="Responsable_ID" ColumnName="Responsable_ID" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Cargo_ID" ColumnName="Cargo_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

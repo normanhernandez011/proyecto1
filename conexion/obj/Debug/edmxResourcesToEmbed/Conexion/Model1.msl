@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ControlCuentasDBModelStoreContainer" CdmEntityContainer="ControlCuentasDBEntities">
+    <EntitySetMapping Name="TBL_Cargos">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Cargos">
+        <MappingFragment StoreEntitySet="TBL_Cargos">
+          <ScalarProperty Name="Cargo_ID" ColumnName="Cargo_ID" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Categorias_Iglesias">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Categorias_Iglesias">
+        <MappingFragment StoreEntitySet="TBL_Categorias_Iglesias">
+          <ScalarProperty Name="Categoria_Iglesia_ID" ColumnName="Categoria_Iglesia_ID" />
+          <ScalarProperty Name="Categoria_Iglesia" ColumnName="Categoria_Iglesia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Cuentas">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Cuentas">
+        <MappingFragment StoreEntitySet="TBL_Cuentas">
+          <ScalarProperty Name="Cuenta_ID" ColumnName="Cuenta_ID" />
+          <ScalarProperty Name="Cuenta" ColumnName="Cuenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Iglesias">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Iglesias">
+        <MappingFragment StoreEntitySet="TBL_Iglesias">
+          <ScalarProperty Name="Iglesia_ID" ColumnName="Iglesia_ID" />
+          <ScalarProperty Name="Iglesia" ColumnName="Iglesia" />
+          <ScalarProperty Name="Categoria_Iglesia_ID" ColumnName="Categoria_Iglesia_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Ingresos">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Ingresos">
+        <MappingFragment StoreEntitySet="TBL_Ingresos">
+          <ScalarProperty Name="Ingreso_ID" ColumnName="Ingreso_ID" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Responsable_ID" ColumnName="Responsable_ID" />
+          <ScalarProperty Name="Cuenta_ID" ColumnName="Cuenta_ID" />
+          <ScalarProperty Name="Iglesia_ID" ColumnName="Iglesia_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Responsables">
+      <EntityTypeMapping TypeName="ControlCuentasDBModel.TBL_Responsables">
+        <MappingFragment StoreEntitySet="TBL_Responsables">
+          <ScalarProperty Name="Responsable_ID" ColumnName="Responsable_ID" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Cargo_ID" ColumnName="Cargo_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

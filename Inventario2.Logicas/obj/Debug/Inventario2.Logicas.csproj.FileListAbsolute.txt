@@ -1,0 +1,28 @@
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\Inventario2.Logicas.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\Inventario2.Logicas.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csproj.CoreCompileInputs.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\EntityFramework.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTIModelo.dll
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.dll.config
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\EntityFramework.xml
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTIModelo.pdb
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csprojAssemblyReference.cache
+C:\Users\DELL Latitude\Desktop\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csproj.CopyComplete
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\Inventario2.Logicas.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\Inventario2.Logicas.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\EntityFramework.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTIModelo.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTI2.Data.dll.config
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\EntityFramework.xml
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\bin\Debug\InventarioTIModelo.pdb
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csprojAssemblyReference.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.csproj.CopyComplete
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.dll
+C:\Users\angel\Desktop\trabajos\ProyectoISf2\InventarioTI\Inventario2.Logicas\obj\Debug\Inventario2.Logicas.pdb

@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_INV_ACTIVOSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AGENCIA">
+    <Key>
+      <PropertyRef Name="ID_AGENCIA" />
+    </Key>
+    <Property Name="ID_AGENCIA" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_AGENCIA" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="100" />
+    <Property Name="ID_MUNICIPIO" Type="int" Nullable="false" />
+    <Property Name="ID_EMP" Type="int" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTO">
+    <Key>
+      <PropertyRef Name="ID_DEPARTAMENTO" />
+    </Key>
+    <Property Name="ID_DEPARTAMENTO" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_DEPARTAMENTO" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEPTO">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_DEPTO" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ID_AGENCIA" Type="int" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_CONTROL_EI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="int" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="varchar" MaxLength="15" />
+    <Property Name="CODIGO_NUEVO" Type="varchar" MaxLength="15" />
+    <Property Name="FECHA_COMPRA" Type="datetime" Nullable="false" />
+    <Property Name="MES_DEPRECIACION" Type="datetime" />
+    <Property Name="ID_PROVEEDOR" Type="int" Nullable="false" />
+    <Property Name="ID_TIPO_EQUIPO" Type="int" Nullable="false" />
+    <Property Name="ID_MARCA" Type="int" Nullable="false" />
+    <Property Name="COLOR" Type="varchar" MaxLength="20" />
+    <Property Name="MODELO" Type="varchar" MaxLength="45" />
+    <Property Name="NUMERO_SERIE" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="TIPO_PROCESADOR" Type="varchar" MaxLength="45" />
+    <Property Name="DISQUETERA" Type="varchar" MaxLength="2" />
+    <Property Name="LECTOR_DVD" Type="varchar" MaxLength="2" />
+    <Property Name="LECTOR_SD_MMC" Type="varchar" MaxLength="2" />
+    <Property Name="PARLANTES_EXTERNOS" Type="varchar" MaxLength="2" />
+    <Property Name="MONITOR_COLOR" Type="varchar" MaxLength="45" />
+    <Property Name="MONITOR_SERIE" Type="varchar" MaxLength="45" />
+    <Property Name="MONITOR_TAMANIO" Type="varchar" MaxLength="10" />
+    <Property Name="MONITOR_TIPO" Type="varchar" MaxLength="3" />
+    <Property Name="TECLADO_COLOR" Type="varchar" MaxLength="20" />
+    <Property Name="TECLADO_MODELO" Type="varchar" MaxLength="20" />
+    <Property Name="MOUSE_COLOR" Type="varchar" MaxLength="20" />
+    <Property Name="UBICACION" Type="varchar" MaxLength="45" />
+    <Property Name="ID_EMPLEADO" Type="int" Nullable="false" />
+    <Property Name="CONDICION_ACTUAL" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_CONTROL_ME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="int" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="varchar" MaxLength="15" />
+    <Property Name="CODIGO_NUEVO" Type="varchar" MaxLength="15" />
+    <Property Name="FECHA_COMPRA" Type="datetime" Nullable="false" />
+    <Property Name="MES_DEPRECIACION" Type="datetime" />
+    <Property Name="ID_PROVEEDOR" Type="int" Nullable="false" />
+    <Property Name="TIPO_MOBILIARIO" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="ID_MARCA" Type="int" />
+    <Property Name="TIPO_MATERIAL" Type="varchar" MaxLength="45" />
+    <Property Name="COLOR" Type="varchar" MaxLength="20" />
+    <Property Name="DIVISIONES_GAVETAS" Type="int" />
+    <Property Name="MODELO" Type="varchar" MaxLength="45" />
+    <Property Name="NUMERO_SERIE" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="UBICACION" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="int" Nullable="false" />
+    <Property Name="CONDICION_ACTUAL" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_DPEI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="int" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FECHA_COMPRA" Type="datetime" Nullable="false" />
+    <Property Name="MESES" Type="int" />
+    <Property Name="NUM_CKE" Type="varchar" MaxLength="25" />
+    <Property Name="NUM_PDA" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="COSTO" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PORCIENTO" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="COSTO_PORCIENTO" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="VIDA" Type="int" Nullable="false" />
+    <Property Name="D_MES" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ACUMULADA" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="VALOR_LIBROS" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DEPRECIADO" Type="char" MaxLength="2" />
+    <Property Name="OBSERVACION" Type="varchar" MaxLength="100" />
+    <Property Name="USUARIO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_DPME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+      <PropertyRef Name="NUMERO_REFERENCIA" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_REFERENCIA" Type="int" Nullable="false" />
+    <Property Name="CODIGO_INVENTARIO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FECHA_COMPRA" Type="datetime" Nullable="false" />
+    <Property Name="MESES" Type="int" />
+    <Property Name="NUM_CKE" Type="varchar" MaxLength="25" />
+    <Property Name="NUM_PDA" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="COSTO" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PORCIENTO" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="COSTO_PORCIENTO" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="VIDA" Type="int" Nullable="false" />
+    <Property Name="D_MES" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ACUMULADA" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="VALOR_LIBROS" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DEPRECIADO" Type="char" MaxLength="2" />
+    <Property Name="OBSERVACION" Type="varchar" MaxLength="100" />
+    <Property Name="USUARIO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_TOMA_ME">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Departamento" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha_Toma_Inventario" Type="datetime" Nullable="false" />
+    <Property Name="Usuario_Responsable" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Codigo_Inventario" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLE_TOMAEI">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Departamento" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Usuario_Responsable" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha_Toma_Inventario" Type="datetime" Nullable="false" />
+    <Property Name="Codigo_Inventario" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="ID_EMPLEADO" />
+    </Key>
+    <Property Name="ID_EMPLEADO" Type="int" Nullable="false" />
+    <Property Name="CEDULA_EMPLEADO" Type="varchar" MaxLength="20" />
+    <Property Name="NOMBRE_EMPLEADO" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="PUESTO" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_CONTROL_EI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="int" />
+    <Property Name="FECHA" Type="datetime" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_CONTROL_ME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="ID_EMPLEADO" Type="int" />
+    <Property Name="FECHA" Type="date" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPED">
+    <Key>
+      <PropertyRef Name="ID_AGENCIA" />
+    </Key>
+    <Property Name="ID_AGENCIA" Type="int" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="FECHA_DEPRECIACION" Type="datetime" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPEI">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="varchar" MaxLength="25" />
+    <Property Name="FECHA_DEPRECIACION" Type="datetime" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_DPME">
+    <Key>
+      <PropertyRef Name="ID_DEPTO" />
+    </Key>
+    <Property Name="ID_DEPTO" Type="int" Nullable="false" />
+    <Property Name="NUMERO_CUENTA" Type="varchar" MaxLength="25" />
+    <Property Name="FECHA_DEPRECIACION" Type="datetime" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENCABEZADO_TOMAEI">
+    <Key>
+      <PropertyRef Name="No_Inventario" />
+    </Key>
+    <Property Name="No_Inventario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fecha_TomaInventario" Type="date" Nullable="false" />
+    <Property Name="Usuario_Responsable" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MARCAS">
+    <Key>
+      <PropertyRef Name="ID_MARCA" />
+    </Key>
+    <Property Name="ID_MARCA" Type="int" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MODULO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MUNICIPIO">
+    <Key>
+      <PropertyRef Name="ID_MUNICIPIO" />
+    </Key>
+    <Property Name="ID_MUNICIPIO" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_MUNICIPIO" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ID_DEPARTAMENTO" Type="int" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPERACIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDMODULO" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="int" Nullable="false" />
+    <Property Name="NOMBRE_PROVEEDOR" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="100" />
+    <Property Name="TELEFONO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CONTACTO" Type="varchar" MaxLength="45" />
+    <Property Name="TELEFONO_CONTACTO" Type="varchar" MaxLength="25" />
+    <Property Name="USUARIO_RESPONSALE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROL_OPERACION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDROL" Type="int" Nullable="false" />
+    <Property Name="IDOPERACION" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_CONTROL">
+    <Key>
+      <PropertyRef Name="ID_CONTROL" />
+    </Key>
+    <Property Name="ID_CONTROL" Type="int" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="CATALOGO_MARCA" Type="char" MaxLength="2" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_EQUIPO">
+    <Key>
+      <PropertyRef Name="ID_TIPO_EQUIPO" />
+    </Key>
+    <Property Name="ID_TIPO_EQUIPO" Type="int" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="USUARIO_RESPONSABLE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_EQUIPO_OFICINA">
+    <Key>
+      <PropertyRef Name="ID_TIPO_EQUIPO_OFICINA" />
+    </Key>
+    <Property Name="ID_TIPO_EQUIPO_OFICINA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CONTRASEÑA" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDROL" Type="int" />
+  </EntityType>
+  <Association Name="FK_AGENCIA_MUNICIPIO">
+    <End Role="MUNICIPIO" Type="Self.MUNICIPIO" Multiplicity="1" />
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MUNICIPIO">
+        <PropertyRef Name="ID_MUNICIPIO" />
+      </Principal>
+      <Dependent Role="AGENCIA">
+        <PropertyRef Name="ID_MUNICIPIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEPTO_ODEF_AGENCIA">
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="1" />
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AGENCIA">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Principal>
+      <Dependent Role="DEPTO">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLE_DPME_ENCABEZADO_DPME">
+    <End Role="ENCABEZADO_DPME" Type="Self.ENCABEZADO_DPME" Multiplicity="1" />
+    <End Role="DETALLE_DPME" Type="Self.DETALLE_DPME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ENCABEZADO_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="DETALLE_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPLEADO_EMPLEADO">
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="1" />
+    <End Role="EMPLEADO1" Type="Self.EMPLEADO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Principal>
+      <Dependent Role="EMPLEADO1">
+        <PropertyRef Name="ID_EMPLEADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_CONTROL_EI" Type="Self.ENCABEZADO_CONTROL_EI" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_CONTROL_EI">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_CONTROL_ME" Type="Self.ENCABEZADO_CONTROL_ME" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_CONTROL_ME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_DPED_AGENCIA">
+    <End Role="AGENCIA" Type="Self.AGENCIA" Multiplicity="1" />
+    <End Role="ENCABEZADO_DPED" Type="Self.ENCABEZADO_DPED" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AGENCIA">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_DPED">
+        <PropertyRef Name="ID_AGENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENCABEZADO_DPME_DEPTO_ODEF">
+    <End Role="DEPTO" Type="Self.DEPTO" Multiplicity="1" />
+    <End Role="ENCABEZADO_DPME" Type="Self.ENCABEZADO_DPME" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DEPTO">
+        <PropertyRef Name="ID_DEPTO" />
+      </Principal>
+      <Dependent Role="ENCABEZADO_DPME">
+        <PropertyRef Name="ID_DEPTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MUNICIPIO_DEPARTAMENTO">
+    <End Role="DEPARTAMENTO" Type="Self.DEPARTAMENTO" Multiplicity="1" />
+    <End Role="MUNICIPIO" Type="Self.MUNICIPIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="ID_DEPARTAMENTO" />
+      </Principal>
+      <Dependent Role="MUNICIPIO">
+        <PropertyRef Name="ID_DEPARTAMENTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CodeCorrelaticoME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CodeCorrelativoEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ELIMINAR_EI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODIGOINVENTARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="EliminarME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODIGOINVENTARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_EQUIPO_ME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DEPTO_ODEF" Type="int" Mode="In" />
+    <Parameter Name="NUMERO_REFERENCIA" Type="int" Mode="In" />
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="FECHA_COMPRA" Type="datetime" Mode="In" />
+    <Parameter Name="MES_DEPRECIACION" Type="datetime" Mode="In" />
+    <Parameter Name="ID_PROVEEDOR" Type="int" Mode="In" />
+    <Parameter Name="TIPO_MOBILIARIO" Type="varchar" Mode="In" />
+    <Parameter Name="ID_MARCA" Type="int" Mode="In" />
+    <Parameter Name="TIPO_MATERIAL" Type="varchar" Mode="In" />
+    <Parameter Name="COLOR" Type="varchar" Mode="In" />
+    <Parameter Name="DIVISIONES_GAVETAS" Type="int" Mode="In" />
+    <Parameter Name="MODELO" Type="varchar" Mode="In" />
+    <Parameter Name="NUMERO_SERIE" Type="varchar" Mode="In" />
+    <Parameter Name="UBICACION" Type="varchar" Mode="In" />
+    <Parameter Name="ID_EMPLEADO" Type="int" Mode="In" />
+    <Parameter Name="CONDICION_ACTUAL" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO_RESPONSABLE" Type="varchar" Mode="In" />
+    <Parameter Name="ESTADO" Type="char" Mode="In" />
+  </Function>
+  <Function Name="INSERT_INVENTARIO_INFORMATICA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DEPTO_ODEF" Type="int" Mode="In" />
+    <Parameter Name="NUMERO_REFERENCIA" Type="int" Mode="In" />
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="FECHA_COMPRA" Type="datetime" Mode="In" />
+    <Parameter Name="MES_DEPRECIACION" Type="datetime" Mode="In" />
+    <Parameter Name="ID_PROVEEDOR" Type="int" Mode="In" />
+    <Parameter Name="ID_TIPO_EQUIPO" Type="int" Mode="In" />
+    <Parameter Name="ID_MARCA" Type="int" Mode="In" />
+    <Parameter Name="COLOR" Type="varchar" Mode="In" />
+    <Parameter Name="MODELO" Type="varchar" Mode="In" />
+    <Parameter Name="NUMERO_SERIE" Type="varchar" Mode="In" />
+    <Parameter Name="TIPO_PROCESADOR" Type="varchar" Mode="In" />
+    <Parameter Name="DISQUETERA" Type="varchar" Mode="In" />
+    <Parameter Name="LECTOR_DVD" Type="varchar" Mode="In" />
+    <Parameter Name="LECTOR_SD_MMC" Type="varchar" Mode="In" />
+    <Parameter Name="PARLANTES_EXTERNOS" Type="varchar" Mode="In" />
+    <Parameter Name="MONITOR_COLOR" Type="varchar" Mode="In" />
+    <Parameter Name="MONITOR_SERIE" Type="varchar" Mode="In" />
+    <Parameter Name="MONITOR_TAMANIO" Type="varchar" Mode="In" />
+    <Parameter Name="MONITOR_TIPO" Type="varchar" Mode="In" />
+    <Parameter Name="TECLADO_COLOR" Type="varchar" Mode="In" />
+    <Parameter Name="TECLADO_MODELO" Type="varchar" Mode="In" />
+    <Parameter Name="MOUSE_COLOR" Type="varchar" Mode="In" />
+    <Parameter Name="UBICACION" Type="varchar" Mode="In" />
+    <Parameter Name="ID_EMPLEADO" Type="int" Mode="In" />
+    <Parameter Name="CONDICION_ACTUAL" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO_RESPONSABLE" Type="varchar" Mode="In" />
+    <Parameter Name="ESTADO" Type="char" Mode="In" />
+  </Function>
+  <Function Name="InsertareTomaEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Departamento" Type="varchar" Mode="In" />
+    <Parameter Name="Usuario_Responsable" Type="varchar" Mode="In" />
+    <Parameter Name="Fecha_Toma_Inventario" Type="datetime" Mode="In" />
+    <Parameter Name="Codigo_Inventario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="MODIFICAR_ME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="NUMERO_SERIE" Type="varchar" Mode="In" />
+    <Parameter Name="TIPO_MATERIAL" Type="varchar" Mode="In" />
+    <Parameter Name="UBICACION" Type="varchar" Mode="In" />
+    <Parameter Name="CONDICION_ACTUAL" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO_RESPONSABLE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ModificarEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="NUMERO_SERIE" Type="varchar" Mode="In" />
+    <Parameter Name="PARLANTES_EXTERNOS" Type="varchar" Mode="In" />
+    <Parameter Name="UBICACION" Type="varchar" Mode="In" />
+    <Parameter Name="CONDICION_ACTUAL" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO_RESPONSABLE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ActivosSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacionAA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacionAP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacionED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacionEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoDepreciacionVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculoReserva" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CopiaHistoricaAA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaAP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaRE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_CopiaHistoricaVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_DepreciacionIndividualAA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_agen" Type="int" Mode="In" />
+    <Parameter Name="id_me" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_DepreciacionIndividualAP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_agen" Type="int" Mode="In" />
+    <Parameter Name="id_me" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_DepreciacionIndividualED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_agen" Type="int" Mode="In" />
+    <Parameter Name="id_ed" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_DepreciacionIndividualEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_depto" Type="int" Mode="In" />
+    <Parameter Name="cod_inv" Type="nvarchar" Mode="In" />
+    <Parameter Name="num_ref" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_DepreciacionIndividualME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_depto" Type="int" Mode="In" />
+    <Parameter Name="cod_inv" Type="nvarchar" Mode="In" />
+    <Parameter Name="num_ref" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_DepreciacionIndividualVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechacierre" Type="smalldatetime" Mode="In" />
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="id_agen" Type="int" Mode="In" />
+    <Parameter Name="id_ve" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_INSERTAR_TOMA_ME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Departamento" Type="varchar" Mode="In" />
+    <Parameter Name="Fecha_Toma_Inventario" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario_Responsable" Type="varchar" Mode="In" />
+    <Parameter Name="Codigo_Inventario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_InsertarCostoDePEI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DEPTO_ODEF" Type="int" Mode="In" />
+    <Parameter Name="NUMERO_REFERENCIA" Type="int" Mode="In" />
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="FECHA_COMPRA" Type="datetime" Mode="In" />
+    <Parameter Name="NUM_CKE" Type="varchar" Mode="In" />
+    <Parameter Name="NUM_PDA" Type="varchar" Mode="In" />
+    <Parameter Name="COSTO" Type="decimal" Mode="In" />
+    <Parameter Name="VIDA" Type="int" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+    <Parameter Name="ESTADO" Type="char" Mode="In" />
+  </Function>
+  <Function Name="SP_InsertarDDME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID_DEPTO_ODEF" Type="int" Mode="In" />
+    <Parameter Name="NUMERO_REFERENCIA" Type="int" Mode="In" />
+    <Parameter Name="CODIGO_INVENTARIO" Type="varchar" Mode="In" />
+    <Parameter Name="FECHA_COMPRA" Type="datetime" Mode="In" />
+    <Parameter Name="NUM_CKE" Type="varchar" Mode="In" />
+    <Parameter Name="NUM_PDA" Type="varchar" Mode="In" />
+    <Parameter Name="COSTO" Type="decimal" Mode="In" />
+    <Parameter Name="VIDA" Type="int" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+    <Parameter Name="ESTADO" Type="char" Mode="In" />
+  </Function>
+  <EntityContainer Name="BD_INV_ACTIVOSModelStoreContainer">
+    <EntitySet Name="AGENCIA" EntityType="Self.AGENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEPARTAMENTO" EntityType="Self.DEPARTAMENTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEPTO" EntityType="Self.DEPTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_CONTROL_EI" EntityType="Self.DETALLE_CONTROL_EI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_CONTROL_ME" EntityType="Self.DETALLE_CONTROL_ME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_DPEI" EntityType="Self.DETALLE_DPEI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_DPME" EntityType="Self.DETALLE_DPME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_TOMA_ME" EntityType="Self.DETALLE_TOMA_ME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DETALLE_TOMAEI" EntityType="Self.DETALLE_TOMAEI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_CONTROL_EI" EntityType="Self.ENCABEZADO_CONTROL_EI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_CONTROL_ME" EntityType="Self.ENCABEZADO_CONTROL_ME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_DPED" EntityType="Self.ENCABEZADO_DPED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_DPEI" EntityType="Self.ENCABEZADO_DPEI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_DPME" EntityType="Self.ENCABEZADO_DPME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ENCABEZADO_TOMAEI" EntityType="Self.ENCABEZADO_TOMAEI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MARCAS" EntityType="Self.MARCAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MODULO" EntityType="Self.MODULO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MUNICIPIO" EntityType="Self.MUNICIPIO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPERACIONES" EntityType="Self.OPERACIONES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROL" EntityType="Self.ROL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROL_OPERACION" EntityType="Self.ROL_OPERACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIPO_CONTROL" EntityType="Self.TIPO_CONTROL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIPO_EQUIPO" EntityType="Self.TIPO_EQUIPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIPO_EQUIPO_OFICINA" EntityType="Self.TIPO_EQUIPO_OFICINA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AGENCIA_MUNICIPIO" Association="Self.FK_AGENCIA_MUNICIPIO">
+      <End Role="MUNICIPIO" EntitySet="MUNICIPIO" />
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEPTO_ODEF_AGENCIA" Association="Self.FK_DEPTO_ODEF_AGENCIA">
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+      <End Role="DEPTO" EntitySet="DEPTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLE_DPME_ENCABEZADO_DPME" Association="Self.FK_DETALLE_DPME_ENCABEZADO_DPME">
+      <End Role="ENCABEZADO_DPME" EntitySet="ENCABEZADO_DPME" />
+      <End Role="DETALLE_DPME" EntitySet="DETALLE_DPME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPLEADO_EMPLEADO" Association="Self.FK_EMPLEADO_EMPLEADO">
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+      <End Role="EMPLEADO1" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_CONTROL_EI_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_CONTROL_EI" EntitySet="ENCABEZADO_CONTROL_EI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_CONTROL_ME_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_CONTROL_ME" EntitySet="ENCABEZADO_CONTROL_ME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_DPED_AGENCIA" Association="Self.FK_ENCABEZADO_DPED_AGENCIA">
+      <End Role="AGENCIA" EntitySet="AGENCIA" />
+      <End Role="ENCABEZADO_DPED" EntitySet="ENCABEZADO_DPED" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENCABEZADO_DPME_DEPTO_ODEF" Association="Self.FK_ENCABEZADO_DPME_DEPTO_ODEF">
+      <End Role="DEPTO" EntitySet="DEPTO" />
+      <End Role="ENCABEZADO_DPME" EntitySet="ENCABEZADO_DPME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MUNICIPIO_DEPARTAMENTO" Association="Self.FK_MUNICIPIO_DEPARTAMENTO">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="MUNICIPIO" EntitySet="MUNICIPIO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

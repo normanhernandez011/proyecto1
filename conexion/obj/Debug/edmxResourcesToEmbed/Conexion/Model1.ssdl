@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ControlCuentasDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_Cargos">
+    <Key>
+      <PropertyRef Name="Cargo_ID" />
+    </Key>
+    <Property Name="Cargo_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cargo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_Categorias_Iglesias">
+    <Key>
+      <PropertyRef Name="Categoria_Iglesia_ID" />
+    </Key>
+    <Property Name="Categoria_Iglesia_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Categoria_Iglesia" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBL_Cuentas">
+    <Key>
+      <PropertyRef Name="Cuenta_ID" />
+    </Key>
+    <Property Name="Cuenta_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cuenta" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'ControlCuentasDB.dbo.TBL_Egresos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="TBL_Egresos">
+          <Property Name="Egreso_ID" Type="int" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+          <Property Name="Fecha" Type="date" />
+          <Property Name="Responsable_ID" Type="int" />
+          <Property Name="Cuenta_ID" Type="int" />
+          <Property Name="Iglesia_ID" Type="int" />
+        </EntityType>-->
+  <EntityType Name="TBL_Iglesias">
+    <Key>
+      <PropertyRef Name="Iglesia_ID" />
+    </Key>
+    <Property Name="Iglesia_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Iglesia" Type="varchar" MaxLength="100" />
+    <Property Name="Categoria_Iglesia_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_Ingresos">
+    <Key>
+      <PropertyRef Name="Ingreso_ID" />
+    </Key>
+    <Property Name="Ingreso_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Responsable_ID" Type="int" />
+    <Property Name="Cuenta_ID" Type="int" />
+    <Property Name="Iglesia_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBL_Responsables">
+    <Key>
+      <PropertyRef Name="Responsable_ID" />
+    </Key>
+    <Property Name="Responsable_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Responsable" Type="varchar" MaxLength="100" />
+    <Property Name="Cargo_ID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ControlCuentasDBModelStoreContainer">
+    <EntitySet Name="TBL_Cargos" EntityType="Self.TBL_Cargos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Categorias_Iglesias" EntityType="Self.TBL_Categorias_Iglesias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Cuentas" EntityType="Self.TBL_Cuentas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Iglesias" EntityType="Self.TBL_Iglesias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Ingresos" EntityType="Self.TBL_Ingresos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBL_Responsables" EntityType="Self.TBL_Responsables" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
